@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Configurações de metadados e título da página -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciamento de Projetos</title>
+  
+  <!-- Link para o arquivo de estilo CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cabeçalho da aplicação -->
+  <header>
+    <h1>Gerenciamento de Projetos</h1>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <!-- Seção de formulário para adicionar novos projetos -->
+    <section id="form-section">
+      <h2>Adicionar Novo Projeto</h2>
+      <form id="project-form">
+        <!-- Campo de entrada para o nome do projeto -->
+        <input type="text" id="project-name" placeholder="Nome do Projeto" required>
+        
+        <!-- Campo de texto para a descrição do projeto -->
+        <textarea id="project-description" placeholder="Descrição" required></textarea>
+        
+        <!-- Campo de data para a data de início do projeto -->
+        <input type="date" id="start-date" required>
+        
+        <!-- Campo de data para a data de término do projeto -->
+        <input type="date" id="end-date" required>
+        
+        <!-- Botão para adicionar o projeto -->
+        <button type="submit">Adicionar Projeto</button>
+      </form>
+    </section>
+
+    <!-- Seção para exibir a lista de projetos -->
+    <section id="project-list">
+      <h2>Lista de Projetos</h2>
+      <table>
+        <!-- Cabeçalho da tabela com os nomes das colunas -->
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Data de Início</th>
+            <th>Data de Término</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        
+        <!-- Corpo da tabela onde os projetos serão adicionados dinamicamente pelo JavaScript -->
+        <tbody id="projects-tbody">
+          <!-- Linhas de projetos serão inseridas aqui -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Link para o arquivo JavaScript com a lógica do CRUD -->
+  <script src="app.js"></script>
+</body>
+</html>

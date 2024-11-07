@@ -1,0 +1,90 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #F69C9E;
+    color: #000000;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #9ea787;
+  }
+  
+  /* Formulário */
+  #form-section {
+    margin-bottom: 20px;
+  }
+  
+  form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  
+  form button {
+    background-color: #F69C9E;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: rgb(246, 184, 187);
+  }
+  
+  /* Tabela */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  button {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Botões de ação */
+  button:nth-child(1) {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  button:nth-child(2) {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
